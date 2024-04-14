@@ -10,7 +10,6 @@ body {
     font-family: Arial, sans-serif; /* Шрифт */
     background-color: #f8f8f8; /* Цвет фона */
     color: #333; /* Цвет текста */
-    overflow-x: hidden; /* Убираем горизонтальную прокрутку на всех устройствах */
 }
 
 /* Шапка сайта */
