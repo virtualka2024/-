@@ -1,10 +1,18 @@
-/* Обнуляем стандартные стили браузера */
+/* Reset стилей для обнуления стандартных стилей браузера */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.social-icons {
+    position: absolute;
+    top: 20px; /* Подберите нужный вам верхний отступ */
+    right: 20px; /* Подберите нужный вам правый отступ */
+}
 
+.social-icons a {
+    margin-left: 10px; /* Добавьте немного отступа между иконками */
+}
 /* Общие стили для всего сайта */
 body {
     font-family: Arial, sans-serif; /* Шрифт */
@@ -25,7 +33,6 @@ h1 {
 
 nav ul {
     list-style-type: none; /* Убираем стандартные маркеры списка */
-    margin-top: 20px; /* Отступ сверху для меню */
 }
 
 nav ul li {
@@ -73,18 +80,85 @@ footer {
     padding: 20px; /* Отступы */
     text-align: center; /* Выравнивание текста по центру */
 }
-
-/* Обнуление стандартных стилей браузера для адаптивного дизайна */
-@-ms-viewport { 
-    width: device-width; 
-} 
-
-body { 
-    -ms-overflow-style: scrollbar; 
-} 
-
-@media screen and (max-width: 480px) { 
-    html, body { 
-        min-width: 320px; 
-    } 
+.about-photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
+
+.about-photo {
+    width: 200px; /* Размер фотографий */
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-photo:hover {
+    transform: scale(1.05);
+}
+.section-reviews {
+    padding: 20px;
+    text-align: center;
+    background-color: #F4F4F4;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.reviews-content {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review {
+    margin: 10px;
+}
+
+.review-img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.review-img:hover {
+    transform: scale(1.05);
+}
+
+.special-offer {
+    font-weight: bold;
+    margin-top: 30px;
+   font-size:24px;
+    color: #000000; /* Оранжевый цвет для акцента */
+}
+@-ms-viewport { 
+    width: device-width; } 
+   
+  body { 
+    -ms-overflow-style: scrollbar; } 
+   
+  @media screen and (max-width: 480px) { 
+    html, body { 
+      min-width: 320px; } } 
+   
+  html { 
+    box-sizing: border-box; } 
+   
+  *, *:before, *:after { 
+    box-sizing: inherit; } 
+   
+  body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after { 
+    -moz-animation: none !important; 
+    -webkit-animation: none !important; 
+    -ms-animation: none !important; 
+    animation: none !important; 
+    -moz-transition: none !important; 
+    -webkit-transition: none !important; 
+    -ms-transition: none !important; 
+    transition: none !important; }
