@@ -137,7 +137,15 @@ footer {
    font-size:24px;
     color: #000000; /* Оранжевый цвет для акцента */
 }
-/* Добавляем медиа-запрос для устройств с максимальной шириной до 768px */
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 768px) {
+    /* Перемещаем значки в правый нижний угол экрана */
+    .instagram-icon, .whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+}
 @media screen and (max-width: 768px) {
     /* Скрываем все изображения, кроме первых трех */
     .cafe-images img:nth-of-type(n+4) {
