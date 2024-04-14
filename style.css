@@ -168,8 +168,4 @@ footer {
         display: none;
     }
     
-    /* Устанавливаем flex-направление в строку для блока изображений */
-    .cafe-images {
-        flex-direction: row;
-    }
-}
+  }
