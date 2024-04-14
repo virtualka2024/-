@@ -1,4 +1,5 @@
- {
+/* Общие стили для всего сайта */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -126,7 +127,7 @@ footer {
 .special-offer {
     font-weight: bold;
     margin-top: 30px;
-    font-size: 24px;
+   font-size:24px;
     color: #000000; /* Оранжевый цвет для акцента */
 }
 
@@ -140,14 +141,6 @@ footer {
 
     /* Стили для контейнера социальных иконок на мобильных устройствах */
     .social-icons {
-        position: relative; /* чтобы значения top и right применялись */
-        top: auto;
-        right: auto;
-        margin-top: 10px; /* У
-.social-icons {
-        position: relative; /* чтобы значения top и right применялись */
-        top: auto;
-        right: auto;
         margin-top: 10px; /* Уменьшаем отступ сверху */
     }
 
@@ -160,12 +153,22 @@ footer {
     .delivery-service {
         margin-bottom: 10px; /* добавляем отступ снизу */
     }
-}
-/* Медиа-запрос для мобильных устройств */
-@media screen and (max-width: 768px) {
-    /* Скрываем все изображения, кроме первых трех */
-    .cafe-images img:nth-of-type(n+4) {
+
+    /* Показываем только три изображения с номерами 71, 75 и 76 */
+    .cafe-images img:not([src*='71.png']):not([src*='75.png']):not([src*='76.png']) {
         display: none;
     }
-    
-  }
+
+    /* Устанавливаем flex-направление в строку для блока изображений */
+    .cafe-images {
+        flex-direction: row;
+    }
+}
+
+/* Медиа-запрос для компьютеров и планшетов */
+@media screen and (min-width: 769px) {
+    /* Показываем все изображения */
+    .cafe-images img {
+        display: block;
+    }
+}
