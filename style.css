@@ -164,7 +164,7 @@ footer {
 /* Медиа-запрос для мобильных устройств */
 @media screen and (max-width: 768px) {
     /* Скрываем все изображения, кроме первых трех */
-    .cafe-images img:nth-of-type(n+71):not(:nth-of-type(-n+73)) {
+    .cafe-images img:nth-of-type(n+4) {
         display: none;
     }
     
