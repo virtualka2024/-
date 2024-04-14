@@ -1,19 +1,13 @@
-/* Reset стилей для обнуления стандартных стилей браузера */
+Вот полный код CSS с учетом ваших требований:
+
+`css
+/* Общие стили для всего сайта */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.social-icons {
-    position: absolute;
-    top: 20px; /* Подберите нужный вам верхний отступ */
-    right: 20px; /* Подберите нужный вам правый отступ */
-}
 
-.social-icons a {
-    margin-left: 10px; /* Добавьте немного отступа между иконками */
-}
-/* Общие стили для всего сайта */
 body {
     font-family: Arial, sans-serif; /* Шрифт */
     background-color: #f8f8f8; /* Цвет фона */
@@ -80,6 +74,7 @@ footer {
     padding: 20px; /* Отступы */
     text-align: center; /* Выравнивание текста по центру */
 }
+
 .about-photos {
     display: flex;
     justify-content: center;
@@ -100,6 +95,7 @@ footer {
 .about-photo:hover {
     transform: scale(1.05);
 }
+
 .section-reviews {
     padding: 20px;
     text-align: center;
@@ -134,9 +130,10 @@ footer {
 .special-offer {
     font-weight: bold;
     margin-top: 30px;
-   font-size:24px;
+    font-size: 24px;
     color: #000000; /* Оранжевый цвет для акцента */
 }
+
 /* Медиа-запрос для мобильных устройств */
 @media screen and (max-width: 768px) {
     /* Перемещаем значки рядом с другими социальными иконками */
@@ -147,6 +144,14 @@ footer {
 
     /* Стили для контейнера социальных иконок на мобильных устройствах */
     .social-icons {
+        position: relative; /* чтобы значения top и right применялись */
+        top: auto;
+        right: auto;
+        margin-top: 10px; /* У
+.social-icons {
+        position: relative; /* чтобы значения top и right применялись */
+        top: auto;
+        right: auto;
         margin-top: 10px; /* Уменьшаем отступ сверху */
     }
 
