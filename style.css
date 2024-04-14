@@ -138,12 +138,13 @@ footer {
     color: #000000; /* Оранжевый цвет для акцента */
 }
 /* Медиа-запрос для мобильных устройств */
+/* Медиа-запрос для мобильных устройств */
 @media screen and (max-width: 768px) {
-    /* Перемещаем значки в правый нижний угол экрана */
+    /* Перемещаем значки рядом с другими социальными иконками */
     .instagram-icon, .whatsapp-icon {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
+        display: inline-block;
+        margin-right: 10px; /* расстояние между значками */
+    
     }
 }
 @media screen and (max-width: 768px) {
