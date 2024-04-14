@@ -170,10 +170,21 @@ footer {
     .cafe-images {
         flex-direction: row;
     }
-}
+
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 768px) {
+    /* Скрываем все изображения, кроме первых трех */
+    .cafe-images img:nth-of-type(n+71):not(:nth-of-type(-n+73)) {
+        display: none;
+    }
+    
+    /* Устанавливаем flex-направление в строку для блока изображений */
+    .cafe-images {
+        flex-direction: row;
+    }
 
     /* Перемещаем значки между блоками "Служба доставки" и "Меню, О нас, Акции и т.д." */
     .delivery-service {
         margin-bottom: 10px; /* добавляем отступ снизу */
-    }
+    
 }
