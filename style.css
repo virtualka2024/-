@@ -137,13 +137,33 @@ footer {
    font-size:24px;
     color: #000000; /* Оранжевый цвет для акцента */
 }
-@-ms-viewport { 
-    width: device-width; } 
-   
-  body { 
-    -ms-overflow-style: scrollbar; } 
-   
-  @media screen and (max-width: 2000px) { 
-    html, body { 
-      min-width: 320px; } } 
+@media screen and (max-width: 768px) {
+    /* Здесь мы определяем стили для мобильных устройств */
+
+    /* Например, уменьшаем размер шрифта для заголовков */
+    h1 {
+        font-size: 32px;
+    }
+
+    /* Изменяем отступы и размеры для изображений в меню */
+    .menu-images img {
+        width: 100px;
+        margin: 5px;
+    }
+
+    /* Изменяем стили для блока с фотографиями кафе */
+    .cafe-images {
+        flex-direction: column; /* Размещаем изображения в столбик */
+        align-items: center; /* Выравниваем по центру */
+    }
+
+    /* Изменяем стили для социальных иконок */
+    .social-icons {
+        position: static; /* Отменяем абсолютное позиционирование */
+        margin-top: 20px; /* Добавляем отступ сверху */
+        text-align: center; /* Выравниваем иконки по центру */
+    }
+
+    /* И так далее, добавляем нужные стили для каждого элемента */
+}
    
