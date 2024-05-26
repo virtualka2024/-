@@ -1,4 +1,3 @@
-/* Общие стили для всего сайта */
 * {
     margin: 0;
     padding: 0;
@@ -6,70 +5,63 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Шрифт */
-    background-color: #f8f8f8; /* Цвет фона */
-    color: #333; /* Цвет текста */
+    font-family: Arial, sans-serif; 
+    background-color: #f8f8f8; 
+    color: #333; 
 }
 
-/* Шапка сайта */
 header {
-    background-color: #ffffff; /* Цвет фона шапки */
-    padding: 20px; /* Отступы */
-    text-align: center; /* Выравнивание текста по центру */
+    background-color: #ffffff; 
+    padding: 20px;  
+    text-align: center; 
 }
 
 h1 {
-    font-size: 48px; /* Размер шрифта названия кафе */
+    font-size: 48px; 
 }
 
 nav ul {
-    list-style-type: none; /* Убираем стандартные маркеры списка */
+    list-style-type: none; 
 }
 
 nav ul li {
-    display: inline; /* Элементы меню в строку */
-    margin-right: 20px; /* Отступы между пунктами меню */
+    display: inline; 
+    margin-right: 20px; 
 }
 
 nav ul li a {
-    text-decoration: none; /* Убираем подчеркивание у ссылок */
-    color: #000000; /* Цвет текста категорий */
-    transition: color 0.3s; /* Плавный переход при изменении цвета */
+    text-decoration: none; 
+    color: #000000; 
+    transition: color 0.3s; 
 }
 
 nav ul li a:hover {
-    color: #FFD700; /* Цвет текста категорий при наведении */
+    color: #FFD700; 
 }
-
-/* Основное содержимое сайта */
 main {
-    padding: 20px; /* Отступы */
+    padding: 20px; 
 }
-
-/* Секции сайта */
 section {
-    margin-bottom: 40px; /* Отступ между секциями */
+    margin-bottom: 40px; 
 }
 
 h2 {
-    font-size: 36px; /* Размер шрифта заголовков секций */
+    font-size: 36px; 
 }
 
 .promotion-content img {
-    max-width: 100%; /* Изображения акций на всю ширину контейнера */
-    height: auto; /* Автоматическая высота */
+    max-width: 100%; 
+    height: auto; 
 }
 
 .about-content img {
-    float: left; /* Обтекание текстом слева */
-    margin-right: 20px; /* Отступ справа от изображения */
+    float: left; 
+    margin-right: 20px;
 }
-
-/* Подвал сайта */
 footer {
-    background-color: #ffffff; /* Цвет фона подвала */
-    padding: 20px; /* Отступы */
-    text-align: center; /* Выравнивание текста по центру */
+    background-color: #ffffff; 
+    padding: 20px; 
+    text-align: center; 
 }
 
 .about-photos {
@@ -81,7 +73,7 @@ footer {
 }
 
 .about-photo {
-    width: 200px; /* Размер фотографий */
+    width: 200px;
     height: auto;
     margin: 10px;
     border-radius: 10px;
@@ -128,46 +120,30 @@ footer {
     font-weight: bold;
     margin-top: 30px;
    font-size:24px;
-    color: #000000; /* Оранжевый цвет для акцента */
+    color: #000000; 
 }
-
-/* Медиа-запрос для мобильных устройств */
 @media screen and (max-width: 768px) {
-    /* Перемещаем значки рядом с другими социальными иконками */
-    .instagram-icon, .whatsapp-icon {
+      .instagram-icon, .whatsapp-icon {
         display: inline-block;
-        margin-right: 10px; /* расстояние между значками */
+        margin-right: 10px; 
     }
-
-    /* Стили для контейнера социальных иконок на мобильных устройствах */
     .social-icons {
-        margin-top: 10px; /* Уменьшаем отступ сверху */
+        margin-top: 10px; 
     }
-
-    /* Стили для отдельных иконок на мобильных устройствах */
     .social-icons a {
-        margin: 0 10px; /* Добавляем небольшой отступ между иконками */
+        margin: 0 10px; 
     }
-
-    /* Перемещаем значки между блоками "Служба доставки" и "Меню, О нас, Акции и т.д." */
     .delivery-service {
-        margin-bottom: 10px; /* добавляем отступ снизу */
+        margin-bottom: 10px; 
     }
-
-    /* Показываем только три изображения с номерами 71, 75 и 76 */
     .cafe-images img:not([src*='71.png']):not([src*='75.png']):not([src*='76.png']) {
         display: none;
     }
-
-    /* Устанавливаем flex-направление в строку для блока изображений */
     .cafe-images {
         flex-direction: row;
     }
 }
-
-/* Медиа-запрос для компьютеров и планшетов */
 @media screen and (min-width: 769px) {
-    /* Показываем все изображения */
     .cafe-images img {
         display: block;
     }
